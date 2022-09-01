@@ -58,7 +58,7 @@ NOTE: Flags with parameters should use an "equals" (-autofit=true, -URL=https://
   -auto-login
         oauth_auto_login is enabled in grafana config
   -autofit
-        Fit panels to screen (default true)
+        Fit panels to screen (default false)
   -c string
         Path to configuration file (config.yaml)
   -field-password string
@@ -125,7 +125,7 @@ They can also be used instead of a configuration file.
 
 ```TEXT
   KIOSK_AUTOFIT bool
-        fit panels to screen (default "true")
+        fit panels to screen (default "false")
   KIOSK_LXDE_ENABLED bool
         initialize LXDE for kiosk mode (default "false")
   KIOSK_LXDE_HOME string

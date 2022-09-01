@@ -49,7 +49,7 @@ func ProcessArgs(cfg interface{}) Args {
 	f.StringVar(&a.WindowPosition, "window-size", "1920,1080", "Size of Kiosk in pixels")
 	f.StringVar(&a.ScaleFactor, "scale-factor", "1.0", "Scale factor, sort of zoom")
 	f.BoolVar(&a.IsPlayList, "playlists", false, "URL is a playlist")
-	f.BoolVar(&a.AutoFit, "autofit", true, "Fit panels to screen")
+	f.BoolVar(&a.AutoFit, "autofit", false, "Fit panels to screen")
 	f.BoolVar(&a.LXDEEnabled, "lxde", false, "Initialize LXDE for kiosk mode")
 	f.StringVar(&a.LXDEHome, "lxde-home", "/home/pi", "Path to home directory of LXDE user running X Server")
 	f.BoolVar(&a.IgnoreCertificateErrors, "ignore-certificate-errors", false, "Ignore SSL/TLS certificate error")

@@ -3,7 +3,7 @@ package kiosk
 // Config configuration for backend
 type Config struct {
 	General struct {
-		AutoFit        bool   `yaml:"autofit" env:"KIOSK_AUTOFIT" env-default:"true" env-description:"fit panels to screen"`
+		AutoFit        bool   `yaml:"autofit" env:"KIOSK_AUTOFIT" env-default:"false" env-description:"fit panels to screen"`
 		LXDEEnabled    bool   `yaml:"lxde" env:"KIOSK_LXDE_ENABLED" env-default:"false" env-description:"initialize LXDE for kiosk mode"`
 		LXDEHome       string `yaml:"lxde-home" env:"KIOSK_LXDE_HOME" env-default:"/home/pi" env-description:"path to home directory of LXDE user running X Server"`
 		Mode           string `yaml:"kiosk-mode" env:"KIOSK_MODE" env-default:"full" env-description:"[full|tv|disabled]"`
